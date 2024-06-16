@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>scm-cli</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="scm-cli Logo" class="logo">
+        <nav>
+            <a href="https://rekunote.github.io/scm-cli">About</a> |
+            <a href="https://www.github.com/RekuNote/scm-py">GitHub</a> |
+            <a href="https://rekunote.github.io/scm-cli/py">scm-py</a>
+        </nav>
+        <p class="description"><br>scm-py is a python port of <a href="https://rekunote.github.io/scm-cli">scm-cli</a>, a command line client for browsing <a href="https://www.smashcustommusic.net/" target="_blank">Smash Custom Music</a>.</p>
+    </header>
+    <main>
+        <div class="install-section">
+            <h2>Download:</h2>
+            <p><a href="blob:https://github.com/81b95d16-197b-4f20-8f47-ae5cded63ea0">Click here to download scm-py</a>.</p><br>
+            <h2>Requirements:</h2>
+            <p><code>requests</code>, <code>PIL</code>, and <code>tqdm</code> Python modules are required. (When ran, scm-py will automatically check for these modules and prompt to install if not found.)</p>
+            <p>To install these modules manually, run:</p>
+            <div class="command-box">
+                <span class="command">pip3 install requests pillow tqdm</span>
+                <img src="copy-icon.png" alt="Copy Icon" class="copy-icon" onclick="copyToClipboard(this)">
+            </div>
+            <p>or</p>
+            <div class="command-box">
+                <span class="command">pip install requests pillow tqdm</span>
+                <img src="copy-icon.png" alt="Copy Icon" class="copy-icon" onclick="copyToClipboard(this)">
+            </div><br>
+            <h2>Usage:</h2>
+            <p>Download and run scm-py:</p>
+            <div class="command-box">
+                <span class="command">python scm-py.py</span>
+                <img src="copy-icon.png" alt="Copy Icon" class="copy-icon" onclick="copyToClipboard(this)">
+            </div>
+        </div>
+        <div class="screenshots-section">
+            <img src="screenshots.png" alt="Screenshots" class="screenshots">
+        </div>
+    </main>
+    <script>
+        function copyToClipboard(element) {
+            const text = element.previousElementSibling.innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                const originalSrc = element.src;
+                element.src = 'check.gif';
+                const gifDuration = 1800; // Duration of the GIF in milliseconds
+                setTimeout(() => {
+                    element.src = originalSrc;
+                }, gifDuration);
+            });
+        }
+    </script>
+</body>
+</html>

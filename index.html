@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>scm-cli</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="scm-cli Logo" class="logo">
+        <nav>
+            <a href="https://rekunote.github.io/scm-cli">About</a> |
+            <a href="https://www.github.com/RekuNote/scm-cli">GitHub</a> |
+            <a href="https://rekunote.github.io/scm-cli/py">scm-py</a>
+        </nav>
+        <p class="description"><br>scm-cli is a command line client for browsing <a href="https://www.smashcustommusic.net/" target="_blank">Smash Custom Music</a>.</p>
+    </header>
+    <main>
+        <div class="install-section">
+            <h2>Install:</h2>
+            <p>Linux & macOS:</p>
+            <div class="command-box">
+                <span class="command">curl -sL https://raw.githubusercontent.com/RekuNote/scm-cli/main/install.sh | bash</span>
+                <img src="copy-icon.png" alt="Copy Icon" class="copy-icon" onclick="copyToClipboard(this)">
+            </div>
+            <p>Windows:</p>
+            <p>Windows users must use <a href="https://rekunote.github.io/scm-cli/py" target="_blank">scm-py</a>.</p>
+            <h2>Updating:</h2>
+            <p>Linux & macOS:</p>
+            <p>If you already have scm-cli installed, all you have to do is run scm-cli and press the U key.</p><br>
+            <p>Alternatively, you can run the update command with:</p>
+            <div class="command-box">
+                <span class="command">scm-cli --update</span>
+                <img src="copy-icon.png" alt="Copy Icon" class="copy-icon" onclick="copyToClipboard(this)">
+            </div>
+            <p>or:</p>
+            <div class="command-box">
+                <span class="command">scm-cli -u</span>
+                <img src="copy-icon.png" alt="Copy Icon" class="copy-icon" onclick="copyToClipboard(this)">
+            </div><br>
+        </div>
+        <div class="screenshots-section">
+            <img src="screenshots.png" alt="Screenshots" class="screenshots">
+        </div>
+    </main>
+    <script>
+        function copyToClipboard(element) {
+            const text = element.previousElementSibling.innerText;
+            navigator.clipboard.writeText(text).then(() => {
+                const originalSrc = element.src;
+                element.src = 'check.gif';
+                const gifDuration = 1800; // Duration of the GIF in milliseconds
+                setTimeout(() => {
+                    element.src = originalSrc;
+                }, gifDuration);
+            });
+        }
+    </script>
+</body>
+</html>

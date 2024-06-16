@@ -1,0 +1,85 @@
+body {
+    background-color: #1D1D1D;
+    color: #BFBFBF;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    width: 400px; /* Restore the logo size */
+    height: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.description a, 
+.install-section a {
+    color: white;
+    text-decoration: underline;
+}
+
+.description {
+    margin-top: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px 50px; /* Add wider side margins */
+}
+
+.install-section {
+    max-width: 600px;
+    padding: 20px;
+    text-align: left;
+}
+
+.command-box {
+    display: flex;
+    align-items: center;
+    background-color: #2C2C2C;
+    padding: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.command {
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.copy-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.screenshots-section {
+    text-align: center;
+    margin-left: 20px;
+}
+
+.screenshots {
+    width: 100%; /* Make the image bigger */
+    max-width: 600px; /* Ensure it doesn't get too big */
+    height: auto;
+}
