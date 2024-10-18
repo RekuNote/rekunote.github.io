@@ -1,8 +1,14 @@
+@font-face {
+  font-family: 'FOT-Seurat-Pro'; /* name your font */
+  src: url('https://reximemo.net/assets/FOT-Seurat-Pro-B.otf') format('opentype'); /* link to the font */
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    font-family: 'FOT-Seurat-Pro', sans-serif; /* use the same name here */
+    font-weight: 100;
   }
   
   body {
@@ -35,8 +41,8 @@
   .app-list {
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    max-width: 600px;
+    gap: 10px;
+    max-width: 1000px;
     margin: 0 auto;
   }
   
